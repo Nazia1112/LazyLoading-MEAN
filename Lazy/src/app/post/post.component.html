@@ -1,0 +1,9 @@
+<div class="post-container">
+    <div *ngIf="posts.length">
+        <div class="post" *ngFor="let post of posts">
+            <img src="https://source.unsplash.com/random/800x600" alt="Post Image">
+            <h1>{{ post.title }}</h1>
+            <h3>{{ post.author }}</h3>
+        </div>
+    </div>
+</div>
